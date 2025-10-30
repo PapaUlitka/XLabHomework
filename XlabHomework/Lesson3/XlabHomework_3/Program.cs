@@ -32,31 +32,31 @@ namespace XlabHomework_3
                         monsters.Add(new Ghost());
                         break;
                     case "4":
-
                         foreach (Monster monster in monsters)
                         {
                             Console.WriteLine(monster.Type + " " + monster.Name);
                         }
-
-
-                        //Console.WriteLine("Выберите монстра");
-                        //for (int i = 1; i <= monsters.Count; i++)
-                        //{
-                        //    Console.WriteLine("монстр: " + (8+i));
-                        //    if (input == (i+8).ToString()) monsters[i].TakeDamage(50);
-                        //}
-
-                        //monsters[monsters.Count - 1].TakeDamage(10);
+                        int input1 = Convert.ToInt32(Console.ReadLine());
+                        monsters[input1].TakeDamage(100);
                         break;
                     case "5":
-                        monsters[r.Next(0, monsters.Count)].TakeDamage(10);
+                        monsters[r.Next(0, monsters.Count)].TakeDamage(100);
                         break;
                     case "6":
-                        //monsters[monsters.Count - 1].UpgradeMonster();
+                        foreach (Monster monster in monsters)
+                        {
+                            Console.WriteLine(monster.Type + " " + monster.Name);
+                        }
+                        int input2 = Convert.ToInt32(Console.ReadLine());
+                        monsters[input2].UpgradeMonster();
                         break;
                     case "7":
-                        
-                        //monsters[monsters.Count - 1].Remove();
+                        foreach (Monster monster in monsters)
+                        {
+                            Console.WriteLine(monster.Type + " " + monster.Name);
+                        }
+                        int input3 = Convert.ToInt32(Console.ReadLine());
+                        monsters.RemoveAt(input3);
                         break;
                     case "8":
                         foreach (var item in monsters) item.ShowInfo();
@@ -81,6 +81,7 @@ namespace XlabHomework_3
         public class Monster
         {
             private int _health;
+            private int _armor;
             public int Health 
             {
                 get
@@ -94,48 +95,67 @@ namespace XlabHomework_3
             }
             public string Name { get; set; }
             public string Type {  get; set; }
-            public void TakeDamage(int damage)
+            public int Armor 
             {
-                _health -= damage;
+                get
+                {
+                    return _armor;
+                }
+                set
+                {
+                    _armor = value;
+                }
+            }
+            public void TakeDamage(int damage)
+            {           
+                _health -= damage - _armor;
+                _armor -= damage;
+                if (_armor <= 0) _armor = 0;
+                if (_health <= 0) Console.WriteLine($"Монстр {Type} {Name} погиб");
             }
             public virtual string Move() => $"{Name} передвигается";
 
             public void ShowInfo()
             {
-                Console.WriteLine($"Имя: {Name}\nТип: {Type}\nЗдоровье: {Health}");
+                Console.WriteLine("######################################");
+                Console.WriteLine($"Имя: {Name}\nТип: {Type}\nЗдоровье: {Health}\nБроня: {Armor}");
+                Console.WriteLine("######################################");
             }
             public void UpgradeMonster()
             {
-                _health += 20;
+                _armor += 20;
             }
         }
         public class Skelet : Monster
         {
-            public Skelet(string name = "Oleg", string type = "скелет", int health = 100)
+            public Skelet(string name = "Oleg", string type = "скелет", int health = 100, int armor = 0)
             {
                 this.Name = name;
                 this.Type = type;
                 this.Health = health;
+                this.Armor = armor;
             }
             public override string Move() => $"{Name} ходит";
         }
         public class Zombie : Monster
         {
-            public Zombie(string name = "Vlad", string type = "зомби", int health = 100)
+            public Zombie(string name = "Vlad", string type = "зомби", int health = 100, int armor = 0)
             {
                 this.Name = name;
                 this.Type = type;
                 this.Health = health;
+                this.Armor = armor;
             }
             public override string Move() => $"{Name} ходит";
         }
         public class Ghost : Monster
         {
-            public Ghost(string name = "Kirill", string type = "призрак", int health = 100)
+            public Ghost(string name = "Kirill", string type = "призрак", int health = 100, int armor = 0)
             {
                 this.Name = name;
                 this.Type = type;
                 this.Health = health;
+                this.Armor = armor;
             }
             public override string Move() => $"{Name} летает";
         }
