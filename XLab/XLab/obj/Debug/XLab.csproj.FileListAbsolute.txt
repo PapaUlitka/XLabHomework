@@ -1,0 +1,8 @@
+C:\Users\oleg1\source\repos\XLab\XLab\bin\Debug\XLab.exe.config
+C:\Users\oleg1\source\repos\XLab\XLab\bin\Debug\XLab.exe
+C:\Users\oleg1\source\repos\XLab\XLab\bin\Debug\XLab.pdb
+C:\Users\oleg1\source\repos\XLab\XLab\obj\Debug\XLab.csproj.AssemblyReference.cache
+C:\Users\oleg1\source\repos\XLab\XLab\obj\Debug\XLab.csproj.CoreCompileInputs.cache
+C:\Users\oleg1\source\repos\XLab\XLab\obj\Debug\XLab.exe
+C:\Users\oleg1\source\repos\XLab\XLab\obj\Debug\XLab.pdb
+C:\Users\oleg1\source\repos\XLab\XLab\obj\Debug\XLab.exe.config
