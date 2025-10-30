@@ -15,10 +15,6 @@ namespace XlabHomework_3
             string input;
             var monsters = new List<Monster>();
             Random r = new Random();
-            var a = new Ghost();
-            a.TakeDamage(50);
-            a.ShowInfo();
-
             do
             {
                 Console.WriteLine("Welcome to My Diablo");
@@ -36,16 +32,31 @@ namespace XlabHomework_3
                         monsters.Add(new Ghost());
                         break;
                     case "4":
-                        monsters[monsters.Count - 1].TakeDamage(10);
+
+                        foreach (Monster monster in monsters)
+                        {
+                            Console.WriteLine(monster.Type + " " + monster.Name);
+                        }
+
+
+                        //Console.WriteLine("Выберите монстра");
+                        //for (int i = 1; i <= monsters.Count; i++)
+                        //{
+                        //    Console.WriteLine("монстр: " + (8+i));
+                        //    if (input == (i+8).ToString()) monsters[i].TakeDamage(50);
+                        //}
+
+                        //monsters[monsters.Count - 1].TakeDamage(10);
                         break;
                     case "5":
-                        monsters[r.Next(1, monsters.Count)].TakeDamage(10);
+                        monsters[r.Next(0, monsters.Count)].TakeDamage(10);
                         break;
                     case "6":
-
+                        //monsters[monsters.Count - 1].UpgradeMonster();
                         break;
                     case "7":
-
+                        
+                        //monsters[monsters.Count - 1].Remove();
                         break;
                     case "8":
                         foreach (var item in monsters) item.ShowInfo();
@@ -53,7 +64,6 @@ namespace XlabHomework_3
                 }
             }
             while (input.Trim().ToLower() != "выход");
-            
         }
         private static void OpenMenu()
         {
@@ -94,10 +104,14 @@ namespace XlabHomework_3
             {
                 Console.WriteLine($"Имя: {Name}\nТип: {Type}\nЗдоровье: {Health}");
             }
+            public void UpgradeMonster()
+            {
+                _health += 20;
+            }
         }
         public class Skelet : Monster
         {
-            public Skelet(string name = "Oleg", string type = "skelet", int health = 100)
+            public Skelet(string name = "Oleg", string type = "скелет", int health = 100)
             {
                 this.Name = name;
                 this.Type = type;
@@ -107,7 +121,7 @@ namespace XlabHomework_3
         }
         public class Zombie : Monster
         {
-            public Zombie(string name = "Vlad", string type = "zombie", int health = 100)
+            public Zombie(string name = "Vlad", string type = "зомби", int health = 100)
             {
                 this.Name = name;
                 this.Type = type;
@@ -117,50 +131,13 @@ namespace XlabHomework_3
         }
         public class Ghost : Monster
         {
-            public Ghost(string name = "Kirill", string type = "ghost", int health = 100)
+            public Ghost(string name = "Kirill", string type = "призрак", int health = 100)
             {
                 this.Name = name;
                 this.Type = type;
                 this.Health = health;
             }
             public override string Move() => $"{Name} летает";
-        }
-        public class Person
-        {
-            public int Age {  get; set; }
-            public string Name { get; set; }
-            public string Surname {  get; set; }
-            public string FullName => $"{Name} {Surname}";
-            public virtual void DoSomething()
-            {
-                Console.WriteLine("Doing something");
-            }
-            public override string ToString() => FullName;
-        }
-        public class Citizen : Person
-        {
-            public int CitizenId {  get; set; }
-
-            public override void DoSomething()
-            {
-                Console.WriteLine("Doing something Citizen");
-            }
-            public override string ToString()
-            {
-                return base.ToString() + " " + CitizenId;
-            }
-        }
-        public class Employee : Person
-        {
-            public int EmployeeID {  get; set; }
-            public override void DoSomething()
-            {
-                Console.WriteLine("Doing something Employee");
-            }
-            public override string ToString()
-            {
-                return base.ToString() + " " + EmployeeID;
-            }
         }
     }
 }

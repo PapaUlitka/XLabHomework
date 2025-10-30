@@ -6,3 +6,11 @@ C:\Users\oleg1\source\repos\XlabHomework_3\XlabHomework_3\obj\Debug\XlabHomework
 C:\Users\oleg1\source\repos\XlabHomework_3\XlabHomework_3\obj\Debug\XlabHomework_3.exe
 C:\Users\oleg1\source\repos\XlabHomework_3\XlabHomework_3\obj\Debug\XlabHomework_3.pdb
 C:\Users\oleg1\source\repos\XlabHomework_3\XlabHomework_3\obj\Debug\XlabHomework_3.exe.config
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\bin\Debug\XlabHomework_3.exe.config
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\bin\Debug\XlabHomework_3.exe
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\bin\Debug\XlabHomework_3.pdb
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\obj\Debug\XlabHomework_3.csproj.AssemblyReference.cache
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\obj\Debug\XlabHomework_3.exe.config
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\obj\Debug\XlabHomework_3.csproj.CoreCompileInputs.cache
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\obj\Debug\XlabHomework_3.exe
+C:\Users\oleg1\XLabHomework\XlabHomework\Lesson3\XlabHomework_3\obj\Debug\XlabHomework_3.pdb
