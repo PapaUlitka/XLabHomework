@@ -1,0 +1,15 @@
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\bin\Debug\net9.0\Lesson 4.exe
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\bin\Debug\net9.0\Lesson 4.deps.json
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\bin\Debug\net9.0\Lesson 4.runtimeconfig.json
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\bin\Debug\net9.0\Lesson 4.dll
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\bin\Debug\net9.0\Lesson 4.pdb
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.AssemblyInfoInputs.cache
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.AssemblyInfo.cs
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.csproj.CoreCompileInputs.cache
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.sourcelink.json
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.dll
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\refint\Lesson 4.dll
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.pdb
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\Lesson 4.genruntimeconfig.cache
+C:\Users\oleg1\XLabHomework\Lesson 4\Lesson 4\Lesson 4\obj\Debug\net9.0\ref\Lesson 4.dll
